@@ -1,0 +1,474 @@
+// ========== FONTS ========== //
+//@font-face {
+//	font-family: "Roboto-Bold";
+//	src: url("../fonts/roboto/Roboto-Bold.ttf");
+//}
+//
+//@font-face {
+//	font-family: "Roboto-Italic";
+//	src: url("../fonts/roboto/Roboto-Italic.ttf");
+//}
+//
+//@font-face {
+//	font-family: "Roboto-Light";
+//	src: url("../fonts/roboto/Roboto-Light.ttf");
+//}
+//
+//@font-face {
+//	font-family: "Roboto-Medium";
+//	src: url("../fonts/roboto/Roboto-Medium.ttf");
+//}
+//
+//@font-face {
+//	font-family: "Roboto-Regular";
+//	src: url("../fonts/roboto/Roboto-Regular.ttf");
+//}
+@import "fonts";
+@import "variables";
+// ========== FONTS END ========== //
+
+// ========== EXTENDS ========== //
+%Roboto-Bold{
+	font-family: "Roboto-Bold"
+}
+
+%Roboto-Italic{
+	font-family: "Roboto-Italic"
+}
+
+%Roboto-Light{
+	font-family: "Roboto-Light"
+}
+
+%Roboto-Medium{
+	font-family: "Roboto-Medium"
+}
+
+%Roboto-Regular{
+	font-family: "Roboto-Regular"
+}
+
+%border-blocks{
+    background-color: #fafafb;
+    border: 2px solid #d2dae1;
+    border-radius: 2px;
+}
+// ========== EXTENDS END ========== //
+
+// ========== COMMON STYLES ========== //
+*{
+	list-style: none;
+}
+
+html, body{
+	font-size: 10px;
+}
+
+body{
+    color: #fff;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+    padding: 0;
+}
+
+//ul, li{
+//	padding: 0;
+//}
+
+a{
+    color: $link-nav-clr;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+button, input, textarea, select{
+	border-radius: $border-radius;
+    border: none;
+}
+
+button, input[type="submit"]:hover{
+    background-color: $btn-common-clr * 1.5;
+}
+
+.btn{
+	border: none;
+//    color: $btn-clr;
+    padding: 14px 8px;
+}
+
+.btn_green{
+//     background-color: $btn-bg-green;
+}
+
+.btn_blue{
+//    background-color: $btn-bg-blue;
+}
+
+.hamburger, .personal{
+    display: none;
+}
+
+.container{
+	max-width: 1024px;
+}
+// ========== COMMON STYLES END ========== //
+
+.header{
+    overflow: hidden;
+    &__scene{
+        position: absolute;
+        bottom: 0;
+        top: 300px;
+        left: -10%;
+    }    
+    & .sun{
+        position: absolute;
+    }
+    &__inner{
+    //padding-bottom: 200px; // in time
+    position: relative;
+    overflow: hidden;
+    background: url(../img/header-bg1-5.png) no-repeat; 
+    background-size: cover;
+}
+
+    .data-depth-1{
+        position: absolute;
+        bottom: 200px;
+        & img{
+            position: relative;
+            top: -81px;
+        }
+    }    
+}
+
+.navMenu{
+    display: none;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 6.4rem 0;
+    background: url(../img/topmenu_bg.png) no-repeat 0 0;
+    background-size: 100%;
+    &__logo{
+        flex-basis: 220px;
+        position: relative;
+        margin: 0 1.5rem 0 0;
+        img{
+            position: absolute;
+        }
+        //background: url(../img/International-Tour-packages.png) no-repeat 0 0;
+    }
+    &__items{
+        margin-top: .5rem;
+        //line-height: 3.4rem;
+        font-size: 1.6rem;
+        a{
+            display: block;
+            border-radius: $border-radius;
+            padding: .25rem 1rem;
+            align-items: center;
+        }
+        & a:hover{
+            background-color: $link-hover-clr;
+            color: $nav-bg;
+            transition: all .4s;
+        }
+    }
+}
+
+.booking{
+    border: 7px solid $border-form-clr;
+    border-radius: 20px;
+//    padding: 7rem 1rem;
+    background: url(../img/step.png) no-repeat;
+    background-position: 10% 120%;
+    background-color: $btn-tabs-clr;
+    z-index: 20;
+    &:before{
+        content: 'Online Booking';
+        padding: 1rem 0 1rem 2rem;
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: -7%;
+        width: 100%;
+        font-size: 1.3rem;
+        background: url(../img/line.png) no-repeat;
+        background-size: contain;
+    }
+    &__form{
+        padding: 7rem 1rem;
+        font-size: 1.7rem;
+    }
+    &__input, &__submit{
+        color: $nav-bg;        
+    }
+    &__input{
+        margin-bottom: .8rem;
+        border: 3px solid $border-form-clr;
+        padding: .1rem .3rem;
+    }
+    & textarea{
+        max-width: 50%;
+        max-height: 56px;
+    }
+    &__submit{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background-color: $btn-common-clr;
+        @extend %Roboto-Bold;
+        &:hover{
+            transition: all .4s;
+        }
+    }
+}
+
+.someOffers{
+    margin-top: 2rem;
+}
+
+.offerLeft{
+    &__caption{
+        font-size: 1.7rem;
+        @extend %Roboto-Regular;
+        margin-bottom: 1rem;
+    }
+    &__h2{
+        font-size: 2.9rem;
+        margin-bottom: 2rem;
+    }
+    &__text{
+        font-size: 1.5rem;        
+    }
+    &__text_1{
+        font-size: 1.5rem;
+        display: none;
+    }
+    &__money, &__img{
+        vertical-align: middle;
+    }
+    &__money{
+        font-size: 2.7rem;
+        margin-right: 2rem;
+    }
+    &__img{
+        border: 3px solid #fff;
+        border-radius: $border-radius;
+    }
+    &__btn{
+        padding: .5rem 1rem;
+        background-color: $btn-common-clr;
+        color: $nav-bg;
+        &:hover{
+            background-color: $btn-common-clr * 1.5;
+            transition: all .4s;
+        }
+    }
+    &__dotted{
+        border: 1px dotted #fff;
+        margin: 1rem 0;
+    }
+}
+
+.offerRight{
+    &__link{
+        background: #299fca;
+        &:hover{
+            background: #81ffff;
+        }
+    }
+}
+
+.tabs{
+    font-size: 1.6rem;
+    &__btns{
+        margin-top: 0px !important;
+        margin-bottom: 1.5rem !important;
+        padding-top: 6.7rem; 
+        background: url(../img/Offer.png) no-repeat right bottom;
+        background-size: contain;
+        
+    }
+    &__table{
+        width: 100%;
+        & td{
+            padding-right: .5rem;
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+    &__caption{
+        width: 60%;
+        padding-left: 17px;
+        background: url(../img/arrow.png) no-repeat;
+        background-position: left center;
+        }
+    &__days{
+        width: 20%;
+    }
+    &__details{
+        width: 20%;
+    }
+}
+
+.map{
+    position: relative;
+    padding-top: 2rem;
+    background: url(../img/map.jpg) no-repeat;
+    background-size: cover;
+    &__banner{
+        position: relative;
+        left: 20%;
+        top: -20%;
+        border-radius: 10px;
+        margin: 10% 0;
+        padding: 2rem 1.6rem;
+        width: 30%;
+        background: #e7e4e4;
+        color: #a4a4a4;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .14);
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 9.3rem;
+            left: 100%;
+            top: 50%;
+            background: url(../img/map-arrow.png) no-repeat;
+            background-size: contain;
+        }
+    }
+    &__list{
+
+//::-webkit-scrollbar              
+//::-webkit-scrollbar-button       
+//::-webkit-scrollbar-track        
+//::-webkit-scrollbar-track-piece  
+//::-webkit-scrollbar-thumb        
+//::-webkit-scrollbar-corner       
+//::-webkit-resizer                
+        margin-bottom: 2rem;
+        overflow: auto;
+        max-height: 195px;
+        &::-webkit-scrollbar{
+            width: 12px;
+        }
+        &::-webkit-scrollbar-track{
+            background: url(../img/scroll-line.jpg) repeat-y;
+            background-position: center;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: url(../img/scroll.jpg) repeat-y;
+        }
+    }
+    &__wrap{
+        margin-bottom: 1rem;
+    }
+    &__img{
+        float: left;
+        margin-right: 1rem;
+        max-width: 76px;
+        border: 3px solid #fff;
+        border-radius: 6px;
+    }
+    &__caption, &__text{
+        color: #a4a4a4;        
+    }
+    &__caption{
+        font-size: 1.7rem;
+    }
+    &__text{
+        font-size: 1.4rem;
+    }
+}
+
+.footer h2{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.footer input, .footer textarea{
+    padding: .4rem 1rem;
+}
+
+.footer input[type='submit']{
+    color: #1380a7;
+    &:hover{
+        background-color: $btn-form-clr * 1.5;
+        transition: all .4s;
+    }
+}
+
+.footer textarea, .footer input:not([type="submit"]){
+    margin-bottom: 1rem;
+    background-color: #0f6686;
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.footer input::placeholder, .footer textarea::placeholder{
+    color: rgba(255, 255, 255, .3);
+}
+
+.footer{
+    &__bg{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        background-color: #1380a7;
+    }
+    &__copy{
+        margin-top: 3rem;
+        font-size: 1.4rem;
+    }
+}
+
+.fLeft, .fCenter, .fRight{
+//    text-align: center;
+}
+
+.fLeft{
+    &__caption{
+        
+    }
+    margin-bottom: 2rem;
+    &__form{
+        margin-bottom: 3rem;
+    }
+    &__email{
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+    &__btn{
+        font-size: 1.6rem;
+    }
+}
+
+.fCenter{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.fRight{
+    margin-bottom: 2rem;
+    &__textarea{
+        max-height: 56px;
+    }
+    &__input{
+        font-size: 1.4rem;
+    }
+    &__submit{
+        font-size: 1.6rem;
+    }
+}
+//::-webkit-scrollbar-thumb{
+//    background-color: firebrick;
+//}
+
+@import "media";

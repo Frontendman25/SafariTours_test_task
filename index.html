@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Bootstrap 101 Template</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="js/slick-master/slick/slick.css">
+	<link rel="stylesheet" href="js/slick-master/slick/slick-theme.css">
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="header__inner container">
+            <div id="scene" class="header__scene">
+                <div class="data-depth-1" data-depth="0.80"><img src="img/header-bg3.png"></div>
+                <div class="data-depth-2" data-depth="0.50"><img src="img/header-bg5.png"></div>
+            </div>
+            
+            <div class="navMenu row">
+               <ul class="navMenu__wrap col-xs-12">
+                    <li class="navMenu__logo">
+                        <img class="navMenu__img" src="img/International-Tour-packages.png" alt="Logo">
+                    </li>                   
+                    <span class="navMenu__lines">&#9776</span>
+               </ul>
+            </div>
+            <div class="navWrap row">
+                <ul class="nav row">
+                    <li class="nav__logo col-xs-3"><img class="img-responsive" src="img/International-Tour-packages.png" alt="Logo"></li>
+                    <li class="nav__items"><a href="">Home</a></li>
+                    <li class="nav__items"><a href="">Packages</a></li>
+                    <li class="nav__items"><a href="">Flights</a></li>
+                    <li class="nav__items"><a href="">Trains</a></li>
+                    <li class="nav__items"><a href="">Reach us</a></li>
+                </ul>
+            </div>
+            
+            <div class="row">
+                <div class="slider col-sm-7 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div><img class="img-responsive" src="img/plane.png"></div>
+                    <div><h3>2</h3></div>
+                    <div><h3>3</h3></div>
+                </div>
+            
+                <div class="bookingWrap col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="booking">
+                        <form action="" class="booking__form row">
+                            <label class="booking__label col-xs-5 text-right" for="name">Name :</label>
+                            <input class="booking__input col-xs-6" id="name" type="text" name="name" required="required">
+                            <label class="booking__label col-xs-5 text-right" for="email">email :</label>
+                            <input class="booking__input col-xs-6" id="email" type="email" name="email" required="required">
+                            <label class="booking__label col-xs-5 text-right" for="package">Package :</label>
+                                <select class="booking__input col-xs-6" id="package" name="packsage" required="required">
+                                    <option value="ohe">Africa Packages</option>
+                                    <option value="ohe">Africa Trains</option>
+                                    <option value="ohe">Africa Flights</option>
+                                </select>
+                            <label class="col-xs-5 text-right" for="message">message :</label>
+                            <textarea class="booking__input col-xs-6" id="message" type="text" name="message" maxlength="100"></textarea>
+                            <input class="booking__submit col-xs-6 col-xs-offset-5" type="submit" value="Submit">
+                        </form>
+                    </div>                
+                </div>
+            </div>
+                
+            <div class="someOffers row">
+                <div class="offerLeft col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="offerLeft__wrap row">
+                        <h2 class="offerLeft__h2 col-xs-12">Our special offers</h2>
+
+                        <span class=" col-xs-3"><img class="offerLeft__img img-responsive" src="img/offer.jpg" alt=""></span>
+                        <h3 class="offerLeft__caption col-xs-9">1914 translation </h3>
+                        <span class="col-xs-9 offerLeft__text">But I must explain to you how all this mistaken idea of denouncing pleasure </span>
+                        <span class="offerLeft__text offerLeft__text_1 col-xs-9 col-xs-offset-3">and praising pain was born and I will give you a complete account of the system, and exp</span>
+                        <div class="text-right col-xs-12">
+                            <span class="offerLeft__money">700$</span>
+                            <button class="offerLeft__btn offerLeft__btn_1">Read more</button>
+                        </div>
+
+                        <div class="col-sm-12 hidden-xs">
+                            <div class="offerLeft__dotted"></div>
+                        </div>
+
+                        <span class=" col-xs-3"><img class="offerLeft__img img-responsive" src="img/offer.jpg" alt=""></span>
+                        <h3 class="offerLeft__caption col-xs-9">1914 translation </h3>
+                        <span class="col-xs-9 offerLeft__text">But I must explain to you how all this mistaken idea of denouncing pleasure </span>
+                        <span class="offerLeft__text offerLeft__text_2 col-xs-9 col-xs-offset-3">and praising pain was born and I will give you a complete account of the system, and exp</span>
+                        <div class="text-right col-xs-12">
+                            <span class="offerLeft__money">700$</span>
+                            <button class="offerLeft__btn offerLeft__btn_2">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="offerRight col-sm-7 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="tabs row" id="tabs">
+                        <ul class="tabs__btns col-sm-12 col-sm-offset-1 col-xs-11">
+                            <li class="text-center"><a href="#tabs-1">TOURS</a></li>
+                            <li class="text-center"><a href="#tabs-2">PHOTOS</a></li>
+                        </ul>
+                        <div class="tabs__tableWrap col-sm-12" id="tabs-1">
+                            <table class="tabs__table">
+                                <tr>
+                                    <td class="tabs__caption">Lorem Ipsum is simply dummy text simply</td>
+                                    <td class="tabs__days text-right">10 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Printing and typesetting industry typesetting</td>
+                                    <td class="tabs__days text-right">10 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Has been the industry's standard</td>
+                                    <td class="tabs__days text-right">11 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Dummy text ever since the 1500s Ipsum is simpl</td>
+                                    <td class="tabs__days text-right">15 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Lorem Ipsum is simply dummy text simply </td>
+                                    <td class="tabs__days text-right">13 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Printing and typesetting industry Printing </td>
+                                    <td class="tabs__days text-right">20 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Has been the industry's standard </td>
+                                    <td class="tabs__days text-right">16 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabs__caption">Dummy text ever since the the industry</td>
+                                    <td class="tabs__days text-right">24 Days</td>
+                                    <td class="tabs__details text-right">more details</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-" id="tabs-2">
+                            <p>Mtincidunt, duisit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map container">
+        <h2 class="map__caption text-center">Find Tourist Spots by Map</h2>
+        <p class="map__text text-center">Click on map</p>
+        <div class="map__banner">
+            <div class="map__list">
+                <div class="map__wrap">
+                    <span class="">
+                        <img class="map__img img-responsive" src="img/offer.jpg" alt="">
+                    </span>
+                    <h3 class="map__caption">1914 translation </h3>
+                    <span class="map__text">But I must explain to you how all this</span>
+                </div>
+                <div class="map__wrap">
+                    <img class="map__img img-responsive" src="img/offer.jpg" alt="">
+                    <h3 class="map__caption">1914 translation </h3>
+                    <span class="map__text">But I must explain to you how all this</span>
+                </div>
+                <div class="map__wrap">
+                    <img class="map__img img-responsive" src="img/offer.jpg" alt="">
+                    <h3 class="map__caption">1914 translation </h3>
+                    <span class="map__text">But I must explain to you how all this</span>
+                </div>
+                <div class="map__wrap">
+                    <img class="map__img img-responsive" src="img/offer.jpg" alt="">
+                    <h3 class="map__caption">1914 translation </h3>
+                    <span class="map__text">But I must explain to you how all this</span>
+                </div>
+                <div class="map__wrap">
+                    <img class="map__img img-responsive" src="img/offer.jpg" alt="">
+                    <h3 class="map__caption">1914 translation </h3>
+                    <span class="map__text">But I must explain to you how all this</span>
+                </div>
+                <div class="map__wrap">
+                    <img class="map__img img-responsive" src="img/offer.jpg" alt="">
+                    <h3 class="map__caption">1914 translation </h3>
+                    <span class="map__text">But I must explain to you how all this</span>
+                </div>
+            </div>
+            <h2 class="">Africa Tourism</h2>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer__bg container">
+            <div class="row">
+                <div class="fLeft col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                    <h2 class="fLeft__caption text-xs-center">News letter</h2>
+                    <form class="fLeft__form" action="">
+                        <input class="fLeft__email" type="email" name="email" placeholder="enter email address">
+                        <input class="fLeft__btn col-xs- col-xs-offset-" type="submit" value="Subscribe">                        
+                    </form>
+                    <h2 class="fLeft__caption">Social media</h2>
+                    <div class="fLeft__icons">
+                        <a href=""><img src="img/tw.png" alt=""></a>
+                        <a href=""><img src="img/fb.png" alt=""></a>
+                        <a href=""><img src="img/in.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="fCenter col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                    <h2 class="fCenter__caption">Contact us</h2>
+                    <p>Lorem Ipsum is simply dummy</p>
+                    <p>Printing and typesetting</p>
+                    <div class="row">
+                        <p class="col-xs-1 col-sm-2">Phone</p>
+                        <span class="col-xs-11 col-sm-10">: +97 -9945512832, 55418745</span>
+                        <p class="col-xs-1 col-sm-2">email</p>
+                        <span class="col-xs-11 col-sm-10">: mail@yourdomain.com</span>
+                        <span class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">: Info@yourdomain.com</span>
+                        <p class="col-xs-1 col-sm-2">Fax</p>
+                        <span class="col-xs-11 col-sm-10">: 1447854, 5564215, 55428</span>
+                    </div>
+                </div>
+                <div class="fRight col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                    <h2 class="fRight__caption">Contact form</h2>
+                    <form class="" action="">
+                        <input class="fRight__input col-xs-8" type="text" placeholder="name">
+                        <input class="fRight__input col-xs-8" type="email" placeholder="email address">
+                        <input class="fRight__input col-xs-8" type="tel" placeholder="phone">
+                        <textarea class="fRight__input fRight__textarea col-xs-11" name="" id="" cols="" rows="" placeholder="Message"></textarea>
+                        <input class="fRight__submit col-xs-4 col-xs-offset-7" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <h3 class="footer__copy text-center">&copy; Copyright 2013 cssauthor.com, All Rights Reserved      Designed and Developed By cssauthor.com</h3>
+        </div>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    
+    <script>
+    var element = document.forms[0].elements[0];
+    
+    if(!element.autofocus){
+        element.focus();
+    }
+    var form = document.forms[0];
+    
+    element.blur();
+    </script>
+    
+    
+    <script>
+        $(function(){
+                $('.navMenu__lines').click(function(e){
+                    $('.navWrap').slideToggle(350);
+                    
+                    $(window).resize(function() {
+                        if ($(window).width() > 700) {
+				        $('.navWrap').removeAttr('style');
+                    }
+		});
+                });
+        });
+    </script>
+    <script>
+        $( function() {
+        $( "#tabs" ).tabs();
+        } );
+  </script>
+    <!-- Slider -->
+    <script src="js/slick-master/slick/slick.min.js"></script>
+    <script>
+        $(function(){
+            $('.slider').slick({
+                dots: false,
+                speed: 500,
+                slidesToShow: 1,
+                resonsive: [{
+                    infinite: true
+                }]
+            });
+        })
+    </script>
+    <!-- Parallax -->
+	<script src="js/compiled/parallax.js"></script>
+	<script>
+        $(function(){
+            function textToggle(btnClass, textClass){
+                $(btnClass).on('click', function(e){
+                    $(textClass).animate({
+                        height: 'toggle'
+                    }                    
+                    , 300);
+                });
+            };
+
+            textToggle('.offerLeft__btn_1', '.offerLeft__text_1');
+            textToggle('.offerLeft__btn_2', '.offerLeft__text_2');
+        });
+    </script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--	<script src="js/bootstrap.min.js"></script>-->
+	<script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+	</script>
+	</body>
+</html>
