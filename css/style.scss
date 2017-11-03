@@ -99,20 +99,26 @@ button, input[type="submit"]:hover{
     padding: 14px 8px;
 }
 
-.btn_green{
-//     background-color: $btn-bg-green;
-}
-
-.btn_blue{
-//    background-color: $btn-bg-blue;
-}
-
 .hamburger, .personal{
     display: none;
 }
 
 .container{
 	max-width: 1024px;
+}
+
+input.error{
+    border: 2px solid #b00;
+}
+
+label.error{
+    margin-bottom: 1rem;
+    margin-left: 42%;
+    margin-right: 5%;
+    display: block;
+    color: #b00;
+    clear: both;
+    font-size: 1.3rem;
 }
 // ========== COMMON STYLES END ========== //
 

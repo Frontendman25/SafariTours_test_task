@@ -54,6 +54,18 @@ button, input[type="submit"]:hover {
 .container {
   max-width: 1024px; }
 
+input.error {
+  border: 2px solid #b00; }
+
+label.error {
+  margin-bottom: 1rem;
+  margin-left: 42%;
+  margin-right: 5%;
+  display: block;
+  color: #b00;
+  clear: both;
+  font-size: 1.3rem; }
+
 .header {
   overflow: hidden; }
   .header__scene {
@@ -316,6 +328,9 @@ button, input[type="submit"]:hover {
 
   .slider {
     margin-top: 1rem; }
+
+  label.error {
+    margin-left: 45%; }
 
   .map__banner {
     width: 45% !important; }

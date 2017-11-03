@@ -57,17 +57,18 @@
             
                 <div class="bookingWrap col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                     <div class="booking">
-                        <form action="" class="booking__form row">
+                        <form action="" id="booking__form" class="booking__form row">
                             <label class="booking__label col-xs-5 text-right" for="name">Name :</label>
                             <input class="booking__input col-xs-6" id="name" type="text" name="name" required="required">
                             <label class="booking__label col-xs-5 text-right" for="email">email :</label>
                             <input class="booking__input col-xs-6" id="email" type="email" name="email" required="required">
                             <label class="booking__label col-xs-5 text-right" for="package">Package :</label>
-                                <select class="booking__input col-xs-6" id="package" name="packsage" required="required">
-                                    <option value="ohe">Africa Packages</option>
-                                    <option value="ohe">Africa Trains</option>
-                                    <option value="ohe">Africa Flights</option>
-                                </select>
+                            <select class="booking__input col-xs-6" id="package" name="packsage" required>
+                                <option value="" disabled>Select item</option>
+                                <option value="Packages">Africa Packages</option>
+                                <option value="Trains">Africa Trains</option>
+                                <option value="Flights">Africa Flights</option>
+                            </select>
                             <label class="col-xs-5 text-right" for="message">message :</label>
                             <textarea class="booking__input col-xs-6" id="message" type="text" name="message" maxlength="100"></textarea>
                             <input class="booking__submit col-xs-6 col-xs-offset-5" type="submit" value="Submit">
@@ -254,7 +255,35 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
     
+    <script>
+        $("#booking__form").validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                packsage: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: 'Поле обязательно для заполнения'
+                },
+                email: {
+                    required: 'Поле обязательно для заполнения',
+                    email: 'Введите пожалуйста коррктный e-mail'
+                }
+            },
+            focusCleanup: true
+        });
+        
+    </script>
     
     <script>
     var element = document.forms[0].elements[0];
@@ -266,7 +295,6 @@
     
     element.blur();
     </script>
-    
     
     <script>
         $(function(){
@@ -285,7 +313,7 @@
         $( function() {
         $( "#tabs" ).tabs();
         } );
-  </script>
+    </script>
     <!-- Slider -->
     <script src="js/slick-master/slick/slick.min.js"></script>
     <script>
