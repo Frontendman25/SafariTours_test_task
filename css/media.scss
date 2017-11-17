@@ -28,7 +28,7 @@
     }
     label.error{
     margin-left: 45%;
-}
+    }
     .map{
         &__banner{
             width: 45% !important;
@@ -140,7 +140,6 @@
     }
 }
 
-
 @media (max-width: 600px){
     .slick-prev:before,
     .slick-next:before{
@@ -150,5 +149,17 @@
         &__banner{
             width: 60% !important;
         }        
+    }
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 9px;
+    }
+    .map{
+        &__banner{
+            width: 70% !important;
+            left: 15%;
+        }
     }
 }

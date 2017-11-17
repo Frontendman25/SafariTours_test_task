@@ -68,6 +68,10 @@ body{
     color: #fff;
 }
 
+.container{
+    overflow: hidden;
+}
+
 ul, li, p, h1, h2, h3, h4, h5, h6{
 	margin: 0;
     padding: 0;
@@ -253,7 +257,7 @@ label.error{
     &__text{
         font-size: 1.5rem;        
     }
-    &__text_1{
+    &__text_1, &__text_2{
         font-size: 1.5rem;
         display: none;
     }

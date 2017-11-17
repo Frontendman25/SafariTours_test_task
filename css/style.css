@@ -28,6 +28,9 @@ html, body {
 body {
   color: #fff; }
 
+.container {
+  overflow: hidden; }
+
 ul, li, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
@@ -164,7 +167,7 @@ label.error {
   margin-bottom: 2rem; }
 .offerLeft__text {
   font-size: 1.5rem; }
-.offerLeft__text_1 {
+.offerLeft__text_1, .offerLeft__text_2 {
   font-size: 1.5rem;
   display: none; }
 .offerLeft__money, .offerLeft__img {
@@ -415,5 +418,12 @@ label.error {
 
   .map__banner {
     width: 60% !important; } }
+@media (max-width: 500px) {
+  html {
+    font-size: 9px; }
+
+  .map__banner {
+    width: 70% !important;
+    left: 15%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -55,7 +55,7 @@
                     <div><h3>3</h3></div>
                 </div>
             
-                <div class="bookingWrap col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="bookingWrap col-sm-5 col-sm-offset-0 col-xs-12">
                     <div class="booking">
                         <form action="" id="booking__form" class="booking__form row">
                             <label class="booking__label col-xs-5 text-right" for="name">Name :</label>
@@ -299,7 +299,7 @@
     <script>
         $(function(){
                 $('.navMenu__lines').click(function(e){
-                    $('.navWrap').slideToggle(350);
+                    $('.navWrap').stop().slideToggle(350);
                     
                     $(window).resize(function() {
                         if ($(window).width() > 700) {
